@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDateTime;
 
+import java.time.ZoneOffset;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -22,6 +23,7 @@ public class MyController {
         response.put("slack_name", slackName);
         response.put("track", track);
         response.put("currentDay", LocalDateTime.now().getDayOfWeek().toString());
+        response.put("current_time", LocalDateTime.now(ZoneOffset.UTC).toString());
         response.put("github_file_url", "https://github.com/oghuanlan-kingsley/Backend/blob/main/src/main/java/com/example/demo/MyController.java");
         response.put("github_repo_url", "https://github.com/oghuanlan-kingsley/Backend");
         response.put("status_code", "200");
