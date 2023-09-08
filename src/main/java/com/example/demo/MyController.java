@@ -22,8 +22,8 @@ public class MyController {
         response.put("slack_name", slackName);
         response.put("track", track);
         response.put("currentDay", LocalDateTime.now().getDayOfWeek().toString());
-        response.put("github_file_url", "https://github.com/username/repo/blob/main/file_name.ext");
-        response.put("github_repo_url", "https://github.com/username/repo");
+        response.put("github_file_url", "https://github.com/oghuanlan-kingsley/Backend/blob/main/src/main/java/com/example/demo/MyController.java");
+        response.put("github_repo_url", "https://github.com/oghuanlan-kingsley/Backend");
         response.put("status_code", "200");
 
         return response;
