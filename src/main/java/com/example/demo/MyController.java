@@ -22,8 +22,8 @@ public class MyController {
         Map<String, Object> response = new HashMap<>();
         response.put("slack_name", slackName);
         response.put("track", track);
-        response.put("currentDay", LocalDateTime.now().getDayOfWeek().toString());
-        response.put("current_time", LocalDateTime.now(ZoneOffset.UTC).toString());
+        response.put("current_day", LocalDateTime.now().getDayOfWeek().toString().toLowerCase());
+        response.put("utc_time", LocalDateTime.now(ZoneOffset.UTC).toString());
         response.put("github_file_url", "https://github.com/oghuanlan-kingsley/Backend/blob/main/src/main/java/com/example/demo/MyController.java");
         response.put("github_repo_url", "https://github.com/oghuanlan-kingsley/Backend");
         response.put("status_code", "200");
