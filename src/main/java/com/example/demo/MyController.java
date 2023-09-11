@@ -13,7 +13,7 @@ import java.util.Map;
 @RestController
 public class MyController {
 
-    @GetMapping("/info")
+    @GetMapping("/api")
     public Map<String, Object> getInfo(
             @RequestParam(name = "slack_name") String slackName,
             @RequestParam(name = "track") String track) {
